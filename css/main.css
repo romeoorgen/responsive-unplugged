@@ -141,6 +141,14 @@
     line-height: 1.285;
   }
   
+  img {
+    width: 100%;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
   address {
     font-style: normal;
   }
@@ -165,6 +173,10 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+  
+  header figure {
+    width: 60%;
   }
   
   .header-divider {
@@ -232,6 +244,10 @@
   /* Hero Area */
   
   .hero-area {
+    background: url("../img/unplugged-retreat.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
   }
@@ -277,9 +293,38 @@
     text-transform: uppercase;
   }
   
+  aside .form {
+    margin-top: 30px;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
   /* Features */
   
   .features {
+    background: url("../img/unplugged-retreat-features.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
   }
@@ -482,6 +527,16 @@
       line-height: 1.25;
     }
   
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+  
     /* Header */
     header {
       padding: 33px 0;
@@ -509,6 +564,10 @@
     }
   
     /* Hero Area */
+  
+    .hero-area {
+      min-height: 600px;
+    }
   
     .hero-area h1 {
       font-size: 3em;
@@ -557,6 +616,7 @@
       width: 85%;
     }
   
+    .reviews article figure,
     .reviews article div {
       width: 49%;
     }
@@ -694,6 +754,7 @@
     }
   
     /* Features */
+  
   
     .features h2 {
       width: 90%;
